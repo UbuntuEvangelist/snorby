@@ -9,7 +9,7 @@ gem 'rake', '0.9.2'
 gem 'request_store', '~> 1.0.5'
 
 gem 'rails',                       RAILS_VERSION
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 3.1.3'
 gem 'bundler',                     '>= 1.0.0'
 gem 'env'
 gem 'json', '~> 1.7'
