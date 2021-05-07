@@ -8,8 +8,8 @@ DM_VERSION    = '~> 1.2.0'
 gem 'rake', '0.9.2'
 gem 'request_store', '~> 1.0.5'
 
-gem 'rails',                       RAILS_VERSION
-gem 'jquery-rails'
+gem 'rails', '>= 5.2.4.6', RAILS_VERSION
+gem 'jquery-rails', '>= 4.0.1'
 gem 'bundler',                     '>= 1.0.0'
 gem 'env'
 gem 'json', '~> 1.7'
@@ -24,9 +24,9 @@ gem 'jruby-rack-worker',           :platforms => :jruby
 gem 'home_run',                    :require => 'date', :platforms => :mri
 
 gem 'activesupport',               RAILS_VERSION, :require => 'active_support'
-gem 'actionpack',                  RAILS_VERSION, :require => 'action_pack'
-gem 'actionmailer',                RAILS_VERSION, :require => 'action_mailer'
-gem 'railties',                    RAILS_VERSION, :require => 'rails'
+gem 'actionpack', '>= 5.2.4.6', RAILS_VERSION, :require => 'action_pack'
+gem 'actionmailer', '>= 5.2.4.6', RAILS_VERSION, :require => 'action_mailer'
+gem 'railties', '>= 5.2.4.6', RAILS_VERSION, :require => 'rails'
 gem 'dm-core',                     DM_VERSION
 gem 'dm-rails',                    DM_VERSION
 gem 'dm-do-adapter',               DM_VERSION
