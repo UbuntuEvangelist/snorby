@@ -8,7 +8,7 @@ DM_VERSION    = '~> 1.2.0'
 gem 'rake', '0.9.2'
 gem 'request_store', '~> 1.0.5'
 
-gem 'rails',                       RAILS_VERSION
+gem 'rails', '>= 4.0.0', RAILS_VERSION
 gem 'jquery-rails'
 gem 'bundler',                     '>= 1.0.0'
 gem 'env'
