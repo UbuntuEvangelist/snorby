@@ -60,7 +60,7 @@ gem 'devise_cas_authenticatable',  :git => 'https://github.com/Snorby/snorby_cas
 gem "mail",                        '~> 2.3'
 gem "RedCloth",                    "~> 4.2.9", :require => 'redcloth'
 gem 'chronic',                     '~> 0.3.0'
-gem 'pdfkit',                      '~> 0.4.6'
+gem 'pdfkit', '~> 0.8.7'
 gem 'ezprint',                     :git => 'https://github.com/mephux/ezprint.git', :branch => 'rails3', :require => 'ezprint'
 gem 'daemons',                     '~> 1.1.0'
 
