@@ -28,7 +28,7 @@ gem 'actionpack',                  RAILS_VERSION, :require => 'action_pack'
 gem 'actionmailer',                RAILS_VERSION, :require => 'action_mailer'
 gem 'railties',                    RAILS_VERSION, :require => 'rails'
 gem 'dm-core',                     DM_VERSION
-gem 'dm-rails',                    DM_VERSION
+gem 'dm-rails', '>= 1.2.1', DM_VERSION
 gem 'dm-do-adapter',               DM_VERSION
 gem 'dm-active_model',             DM_VERSION
 gem 'dm-mysql-adapter',            DM_VERSION
@@ -53,8 +53,8 @@ gem 'capistrano',                  '2.14.1'
 # Rails Plugins
 gem 'jammit',                      '~> 0.5.4'
 gem 'cancan',                      '~> 1.6'
-gem 'devise',                      '~> 1.4'
-gem 'dm-devise',                   '~> 1.5'
+gem 'devise', '~> 1.5', '>= 1.5.4'
+gem 'dm-devise', '~> 1.5', '>= 1.5.0'
 gem 'rubycas-client'
 gem 'devise_cas_authenticatable',  :git => 'https://github.com/Snorby/snorby_cas_authenticatable.git'
 gem "mail",                        '~> 2.3'
