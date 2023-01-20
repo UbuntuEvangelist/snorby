@@ -8,8 +8,8 @@ DM_VERSION    = '~> 1.2.0'
 gem 'rake', '0.9.2'
 gem 'request_store', '~> 1.0.5'
 
-gem 'rails',                       RAILS_VERSION
-gem 'jquery-rails'
+gem 'rails', '>= 6.1.7.1', RAILS_VERSION
+gem 'jquery-rails', '>= 4.0.1'
 gem 'bundler',                     '>= 1.0.0'
 gem 'env'
 gem 'json', '~> 1.7'
@@ -23,10 +23,10 @@ gem 'jruby-rack-worker',           :platforms => :jruby
 # DateTime Patches
 gem 'home_run',                    :require => 'date', :platforms => :mri
 
-gem 'activesupport',               RAILS_VERSION, :require => 'active_support'
-gem 'actionpack',                  RAILS_VERSION, :require => 'action_pack'
-gem 'actionmailer',                RAILS_VERSION, :require => 'action_mailer'
-gem 'railties',                    RAILS_VERSION, :require => 'rails'
+gem 'activesupport', '>= 6.1.7.1', RAILS_VERSION, :require => 'active_support'
+gem 'actionpack', '>= 6.1.7.1', RAILS_VERSION, :require => 'action_pack'
+gem 'actionmailer', '>= 6.1.7.1', RAILS_VERSION, :require => 'action_mailer'
+gem 'railties', '>= 6.1.7.1', RAILS_VERSION, :require => 'rails'
 gem 'dm-core',                     DM_VERSION
 gem 'dm-rails',                    DM_VERSION
 gem 'dm-do-adapter',               DM_VERSION
@@ -64,7 +64,7 @@ gem 'pdfkit',                      '~> 0.4.6'
 gem 'ezprint',                     :git => 'https://github.com/mephux/ezprint.git', :branch => 'rails3', :require => 'ezprint'
 gem 'daemons',                     '~> 1.1.0'
 
-gem 'delayed_job',                 '~> 2.1.4'
+gem 'delayed_job', '~> 4.1.9'
 gem 'delayed_job_data_mapper',     '~> 1.0.0.rc', :git => 'https://github.com/Snorby/delayed_job_data_mapper.git'
 
 # Working On This
@@ -80,7 +80,7 @@ gem 'whois',                       '~> 2.3.0'
 gem 'simple_form',                 '~> 1.2.2'
 gem 'geoip',                       '~> 1.1.1'
 gem 'netaddr',                     '~> 1.5.0'
-gem 'dm-zone-types',               '~> 0.3'
+gem 'dm-zone-types', '~> 0.3'
 gem 'timezone_local',              '~> 0.1.5'
 
 group(:development) do
