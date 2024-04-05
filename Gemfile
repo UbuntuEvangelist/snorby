@@ -8,8 +8,8 @@ DM_VERSION    = '~> 1.2.0'
 gem 'rake', '0.9.2'
 gem 'request_store', '~> 1.0.5'
 
-gem 'rails',                       RAILS_VERSION
-gem 'jquery-rails'
+gem 'rails', '>= 7.0.8.1', RAILS_VERSION
+gem 'jquery-rails', '>= 4.0.1'
 gem 'bundler',                     '>= 1.0.0'
 gem 'env'
 gem 'json', '~> 1.7'
@@ -24,9 +24,9 @@ gem 'jruby-rack-worker',           :platforms => :jruby
 gem 'home_run',                    :require => 'date', :platforms => :mri
 
 gem 'activesupport',               RAILS_VERSION, :require => 'active_support'
-gem 'actionpack',                  RAILS_VERSION, :require => 'action_pack'
-gem 'actionmailer',                RAILS_VERSION, :require => 'action_mailer'
-gem 'railties',                    RAILS_VERSION, :require => 'rails'
+gem 'actionpack', '>= 7.0.8.1', RAILS_VERSION, :require => 'action_pack'
+gem 'actionmailer', '>= 7.0.8.1', RAILS_VERSION, :require => 'action_mailer'
+gem 'railties', '>= 7.0.8.1', RAILS_VERSION, :require => 'rails'
 gem 'dm-core',                     DM_VERSION
 gem 'dm-rails',                    DM_VERSION
 gem 'dm-do-adapter',               DM_VERSION
@@ -53,8 +53,8 @@ gem 'capistrano',                  '2.14.1'
 # Rails Plugins
 gem 'jammit',                      '~> 0.5.4'
 gem 'cancan',                      '~> 1.6'
-gem 'devise',                      '~> 1.4'
-gem 'dm-devise',                   '~> 1.5'
+gem 'devise', '~> 2.0', '>= 2.0.0'
+gem 'dm-devise', '~> 2.0', '>= 2.0.0'
 gem 'rubycas-client'
 gem 'devise_cas_authenticatable',  :git => 'https://github.com/Snorby/snorby_cas_authenticatable.git'
 gem "mail",                        '~> 2.3'
@@ -85,11 +85,11 @@ gem 'timezone_local',              '~> 0.1.5'
 
 group(:development) do
 	gem "letter_opener"
-  gem 'thin'
+  gem 'thin', '>= 1.6.0'
 end
 
 group(:test) do
-  gem 'capybara'
+  gem 'capybara', '>= 2.1.0'
 
   gem 'rspec',                	  RSPEC_VERSION
   gem 'rspec-core',               RSPEC_VERSION, :require => 'rspec/core'
